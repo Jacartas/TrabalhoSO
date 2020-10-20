@@ -1,0 +1,2 @@
+Gonçalo Pereira;92973;clinica geral;goncalo@gmail.com;0;0;50
+João Vieira;98765;clinica geral;vieira@gmail.com;0;0;100
