@@ -1,0 +1,55 @@
+#!/bin/bash
+clear
+echo -e "Menu:\n1.Cria Pacientes\n2.Cria médicos\n3.Stats\n4.Avalia médicos\n0.Sair"
+read leitura
+clear
+case $leitura in
+    1)
+        ./cria_pacientes.sh
+        ./menu
+        ;;
+    2)
+        IFS='|'
+        echo "Inserir nome:"
+        read nome
+        echo "Inserir número da cédula:"
+        read numero 
+        echo "Inserir especialidade:"
+        read especialidade
+        echo "Inserir email:"
+        read email
+        clear
+        ./cria_medico.sh $nome $numero $especialidade $email
+        echo -e "\nPrima uma tecla para continuar"
+        read
+        ./menu
+        ;;
+    3)
+        echo "Inserir localidade:"
+        read localidade
+        echo "Inserir saldo mínimo:"
+        read saldo
+        clear
+        ./stats.sh $localidade $saldo
+        echo -e "\nPrima uma tecla para continuar"
+        read
+        ./menu
+        exit
+        ;;
+    4)
+        ./avalia_medicos.sh
+        echo -e "\nPrima uma tecla para continuar"
+        read
+        ./menu
+        exit
+        ;;
+    0)
+        ;;
+    *)
+        echo "comando invalido"
+        echo -e "\nPrima uma tecla para continuar"
+        read
+        ./menu
+        exit
+        ;;
+esac

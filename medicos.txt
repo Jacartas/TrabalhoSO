@@ -1,2 +1,4 @@
-Gonçalo Pereira;92973;clinica geral;goncalo@gmail.com;2;7;50
-João Vieira;98765;clinica geral;vieira@gmail.com;0;0;100
+Joao silva;12345;ortopedia;jsilva@gmail.com;3;8;100
+maria beatriz;98765;cirurgia;mbeatriz@gmail.com;6;10;200
+joao antunes;79462;medicina geral;jantunes@gmail.com;3;5;500
+helena coelho;13462;dermatologia;hcoelho@gmail.com;6;4;50
